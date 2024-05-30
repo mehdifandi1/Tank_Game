@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://asset/bomb-removebg-preview (1).png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 19.0263
+
+[node name="RigidBody2D" type="RigidBody2D"]
+position = Vector2( 317, 159 )
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 3 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -6.10352e-05, 0 )
+scale = Vector2( 0.332839, 0.18639 )
+texture = ExtResource( 1 )
